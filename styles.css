@@ -1,3 +1,102 @@
 html {
 	font-family: 'DINPro light', sans-serif;
+	box-sizing: border-box;
+	background: #eee;
+	color: #333;
 }
+*, *:before, *:after {
+	box-sizing: inherit;
+	line-height: 1.6em;
+}
+
+.wrapper {
+	width: 1140px;
+	margin: auto;
+}
+
+.card {
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	border-radius: 2px;
+}
+.card:hover {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.17), 0 6px 6px rgba(0,0,0,0.21);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto; 
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	align-content: center;
+}
+
+.grid-item{
+	width: 100%;
+}
+
+.grid-item-header img {
+	width: 100%;
+}
+
+.grid-item-body {
+	padding: 0 5%;
+}
+
+.grid-item-body h1 {
+	font-size: 1.4em;
+	text-transform: uppercase;
+}
+
+.grid-item-body p {
+	text-align: justify;
+
+}
+
+.grid-item-footer {
+	padding: 0 5%;
+}
+
+.grid-item-footer ul{
+	padding: 0;
+	color: #aaa;
+}
+
+.grid-item-footer li{
+	display: inline-block;
+}
+
+.grid-item-footer a {
+	text-decoration: none;
+	color: #aaa;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.grid-item-footer a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+/*
+.a{
+	grid-column: 1 / 1;
+	grid-row: 1 / 1;
+}
+
+.b{
+	grid-column: 2 / 2;
+	grid-row: 1 / 1;
+}
+
+.c{
+	grid-column: 1 / 1;
+	grid-row: 2 / 2;
+}
+
+.d{
+	grid-column: 2 / 2;
+	grid-row: 2 / 2;
+}
+*/
