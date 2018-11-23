@@ -1,7 +1,15 @@
 html, body {
-  color: #fff;
+  color: #333;
   font-family: sans-serif;
   text-align: center;
+}
+
+p {
+  max-width: 640px;
+}
+
+img {
+  width: 100%;
 }
 
 .my-grid{
@@ -13,12 +21,7 @@ html, body {
 }
 
 .my-grid div {
-  background-color: blue;
-  padding: 10px;
-}
-
-.my-grid div:nth-child(even){
-  background: #777;
+  background-color: #eee;
   padding: 10px;
 }
 
@@ -27,29 +30,55 @@ html, body {
 }
 
 .content {
-  grid-column: 2 / -1;
+  grid-column: 1 / -1;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
 
-.content p {
-  border: 1px solid #fff;
+.content .content-block {
+  background-color: #ccc;
   padding: 10px;
-  margin: 0;
+  text-align: left;
 }
 
-.content p:nth-child(1) {
+.content .content-block:first-child {
   grid-column: 1 / -1;
+
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-areas: 
+    "t i";
+
 }
 
-.content p:nth-child(3) {
+.content .content-block:nth-child(2) {
   grid-row-start: 2;
-  grid-row-end: 5;
+  grid-row-end: 4;
+}
+
+.content .content-block:last-child {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column: 2 / -1;
+}
+
+.content .content-block:first-child .content-block-text {
+  grid-area: t;
+  align-self: center;
+  justify-self: center;
+}
+
+.content .content-block:first-child  .content-block-image {
+  grid-area: i;
 }
 
 .sidebar {
+  grid-column: 1 / -1;
 }
 
 .footer {
