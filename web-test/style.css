@@ -1,0 +1,143 @@
+html, body {
+	box-sizing: border-box;
+	height: 100%;
+	padding: 0px;
+	margin: 1em;
+	font-family: sans-serif;
+	line-height: 1.8em;
+}
+
+/* Grid */
+
+.site > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.site {
+	height: 100%; 
+	display: grid;
+	grid-gap: 8px;
+	grid-template-columns: 1;
+}
+
+.site-header {
+	grid-column: 1 / -1;
+}
+
+.site-nav {
+	grid-column: 1 / -1;
+	background-color: #f2f2f2;
+	width: 100%;
+	max-width: 640px;
+	justify-self: center;
+}
+
+.site-main {
+	grid-column: 1 / -1;
+}
+
+.site-footer {
+	grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 999px) {
+
+	.site {
+		height: 100%; 
+		display: grid;
+		grid-gap: 8px;
+		grid-template-columns: 280px auto;
+		grid-template-rows: 96px auto 96px;
+	}
+
+	.site-header {
+		grid-column: 1 / 2;
+	}
+
+	.site-nav {
+		grid-column: 1 / 2;
+		background-color: #fff;
+	}
+
+	.site-main {
+		grid-column: 2 / -1;
+		grid-row: 1 / -1; 
+		align-self: flex-start;
+	}
+
+	.site-footer {
+		grid-column: 1 / 2;
+		justify-self: flex-start;
+	}
+
+	.site-main article {
+		font-size: 1em;
+		max-width: 640px;
+		padding: 0 2em;
+	}
+}
+
+/* Content */
+
+.site-header > .logo {
+	border: 4px solid black;
+	padding: 0.40em;
+}
+
+.site-nav {
+	--border-bottom: 4px solid black;
+}
+
+.site-nav > ul {
+	list-style: none;
+	padding: 0 0 1em 0;
+}
+
+.site-nav > ul > li > a {
+	color: #7f7f7f;
+	text-decoration: none; 
+	transition-timing-function: ease-in;
+	transition:.2s;
+}
+
+.site-nav > ul > li > a:hover {
+	text-decoration: underline;
+}
+
+.site-main article {
+	font-size: 1em;
+	max-width: 640px;
+	padding: 0;
+}
+
+.site-main article h1 {
+	font-size: 2.5em;
+}
+
+.site-main article p {
+}
+
+.site-main article img {
+	width: 100%;
+}
+
+.social-media-icons-list{
+	padding: 0;
+}
+
+.social-media-icons-list li{
+	display: inline;
+}
+
+.social-media-icons-list li a img{
+	margin: 0 6px;
+	opacity: 0.5;
+}
+
+.social-media-icons-list li a img:hover{
+	opacity: 1;
+	transition-timing-function: ease-in;
+	transition:.2s;
+}
