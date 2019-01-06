@@ -1,8 +1,8 @@
-html, body {
+html {
 	box-sizing: border-box;
 	height: 100%;
-	padding: 0px;
-	margin: 1em;
+	margin: 0px;
+	padding: 0 1em;
 	font-family: sans-serif;
 	line-height: 1.8em;
 }
@@ -59,12 +59,13 @@ html, body {
 	.site-nav {
 		grid-column: 1 / 2;
 		background-color: #fff;
+		align-self: flex-start;
 	}
 
 	.site-main {
 		grid-column: 2 / -1;
 		grid-row: 1 / -1; 
-		align-self: flex-start;
+		margin: 0 1.5em;
 	}
 
 	.site-footer {
@@ -84,6 +85,17 @@ html, body {
 .site-header > .logo {
 	border: 4px solid black;
 	padding: 0.40em;
+	text-decoration: none;
+	color: #000;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.site-header > .logo:hover {
+	background-color: #000;
+	color: #fff;
+	transition-timing-function: ease-in;
+	transition:.2s;
 }
 
 .site-nav {
@@ -121,6 +133,44 @@ html, body {
 
 .site-main article img {
 	width: 100%;
+}
+
+.site-main > .gallery {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: 1;
+	grid-auto-rows: 240px;
+	grid-auto-flow: dense;
+}
+
+.site-main > .gallery > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.vertical {
+	grid-row: span 2;
+}
+
+@media only screen and (min-width: 639px) {
+	.site-main > .gallery {
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		margin: 1em;
+	}
+
+	.vertical {
+		grid-row: span 2;
+	}
+
+	.horizontal {
+		grid-column: span 2;
+	}
+
+	.big {
+		grid-column: span 2;
+		grid-row: span 3;
+	}
 }
 
 .social-media-icons-list{
