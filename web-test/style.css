@@ -24,7 +24,7 @@ html {
 
 .site-header {
 	grid-column: 1 / -1;
-	padding: 0;
+	padding: 1em 0;
 }
 
 .site-nav {
@@ -55,7 +55,7 @@ html {
 
 	.site-header {
 		grid-column: 1 / 2;
-		padding: 1em 0;
+		padding: 0;
 	}
 
 	.site-nav {
