@@ -24,6 +24,7 @@ html {
 
 .site-header {
 	grid-column: 1 / -1;
+	padding: 0;
 }
 
 .site-nav {
@@ -32,7 +33,6 @@ html {
 	width: 100%;
 	max-width: 640px;
 	justify-self: center;
-	padding: 0;
 }
 
 .site-main {
@@ -55,13 +55,13 @@ html {
 
 	.site-header {
 		grid-column: 1 / 2;
+		padding: 1em 0;
 	}
 
 	.site-nav {
 		grid-column: 1 / 2;
 		background-color: #fff;
 		align-self: flex-start;
-		padding: 1em 0;
 	}
 
 	.site-main {
