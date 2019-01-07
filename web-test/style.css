@@ -32,6 +32,7 @@ html {
 	width: 100%;
 	max-width: 640px;
 	justify-self: center;
+	padding: 0;
 }
 
 .site-main {
@@ -60,6 +61,7 @@ html {
 		grid-column: 1 / 2;
 		background-color: #fff;
 		align-self: flex-start;
+		padding: 1em 0;
 	}
 
 	.site-main {
