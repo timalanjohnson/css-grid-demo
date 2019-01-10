@@ -35,7 +35,6 @@ a:hover {
   grid-gap: 0em;
   padding: 0;
   margin: 0;
-  margin-top: 1em;
   grid-template-columns: 1;
 }
 
@@ -91,8 +90,11 @@ a:hover {
 
 /*  LOGO  */
 .logo {
+  background-color: #f7f7f7;
   align-self: center;
   text-align: center;
+  height: 100%;
+  padding-top: 1.6em;
   font-size: 1.5em;
 }
 
@@ -109,6 +111,10 @@ a:hover {
   background-color: #333;
 }
 /*  NAV  */
+
+.main-nav {
+  background-color: #f7f7f7;
+}
 
 .main-nav > ul {
   padding: 0 1em;
@@ -144,7 +150,7 @@ a:hover {
 .search form input {
   padding: 1em 0.5em;
   border: 0;
-  background-color: #f7f7f7;
+  background-color: #fff;
   width: 75%;
 }
 
@@ -189,9 +195,6 @@ a:hover {
   }
 
   .search form input {
-    padding: 1em;
-    border: 0;
-    background-color: #f7f7f7;
     width: 100%;
     margin-bottom: 1em;
   }
@@ -210,7 +213,7 @@ a:hover {
 .content {
   justify-self: center;
   max-width: 720px;
-  padding: 1em;
+  padding: 1em 2em;
   font-family: 'Noto Serif', serif;
 }
 
@@ -245,7 +248,7 @@ a:hover {
 }
 
 .sidebar > * {
-  padding: 1em;
+  padding: 0 oem;
   margin: 0;
 }
 
@@ -280,6 +283,7 @@ a:hover {
 
 .footer {
   background-color: #eeeeee;
+  padding: 1em 1em;
 }
 
 .footer > ul {
