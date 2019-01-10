@@ -248,8 +248,14 @@ a:hover {
 }
 
 .sidebar > * {
-  padding: 0 oem;
+  padding: 0;
   margin: 0;
+}
+
+@media only screen and (min-width: 839px){
+  .sidebar > * {
+    padding: 0 2em;
+  }
 }
 
 .sidebar > ul {
@@ -294,7 +300,11 @@ a:hover {
   display: inline;
 }
 
-
+@media only screen and (min-width: 839px){
+  .footer {
+    padding: 1.5em 3em;
+  }
+}
 
 
 
