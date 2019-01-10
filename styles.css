@@ -40,7 +40,6 @@ a:hover {
 
 .container > * {
   padding: 1em;
-  border: 1px solid blue;
 }
 
 .container > .logo {
@@ -179,6 +178,29 @@ a:hover {
 
 .sidebar > ul {
   list-style: none;
+}
+
+.sidebar form input {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 0;
+  width: 100%;
+}
+
+.sidebar form button {
+  padding: 1em 0.5em;
+  margin-bottom: 1em;
+  border: 0;
+  width: 50%;
+  background-color: #1abc9c; 
+  color: #fff;
+}
+
+.sidebar form button:hover{
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition: .27s; 
+  background-color: #16a085;
 }
 
 /*  FOOTER  */
