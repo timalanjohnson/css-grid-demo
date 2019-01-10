@@ -119,7 +119,6 @@ a:hover {
 .main-nav > ul > li {
   font-weight: 700;
   list-style: none;
-  margin: 0 1em;
   align-self: center;
   justify-self: center;
 }
@@ -127,6 +126,7 @@ a:hover {
 .main-nav > ul > li > a{
   color: #333;
   text-decoration: none;
+  padding: 0.5em 1em;
 }
 
 .main-nav > ul > li > a:hover {
