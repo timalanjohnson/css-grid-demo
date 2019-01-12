@@ -7,6 +7,7 @@ html {
 	padding: 0;
 	font-family: 'Noto Sans', sans-serif;
 	line-height: 1.8em;
+	border-top: 8px solid #FFC100;
 }
 
 body {
@@ -34,9 +35,7 @@ a:hover {
 	display: grid;
 	grid-gap: 8px;
 	grid-template-columns: 1;
-	border: 8px solid #FFC100;
-	padding-left: 2em;
-	padding-top: 1em;
+	padding: 1em 2em;
 }
 
 .site > div {
@@ -157,7 +156,6 @@ a:hover {
 
 .site-main article img {
 	width: 100%;
-	border: 8px solid #000;
 }
 
 .site-main > .gallery {
